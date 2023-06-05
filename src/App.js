@@ -4,6 +4,7 @@ import RouterMenu from "./routes/index";
 import { Watch } from "react-loader-spinner";
 import ScrollTopToBottom from "./components/ScrollTopToBottom";
 import Footer from "./components/Footer";
+import ScrollTop from "./components/ScrollTop";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -30,6 +31,7 @@ function App() {
 
   return (
     <div id="app">
+      <ScrollTop />
       <RouterMenu />
       <Footer />
       <ScrollTopToBottom />
